@@ -7,17 +7,9 @@
     "build": "webpack --mode production",
     "test": "jest --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/learnwithsumit/testing-in-javascript.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/learnwithsumit/testing-in-javascript/issues"
-  },
-  "homepage": "https://github.com/learnwithsumit/testing-in-javascript#readme",
   "devDependencies": {
     "@types/jest": "^28.1.1",
     "jest": "^28.1.1",
