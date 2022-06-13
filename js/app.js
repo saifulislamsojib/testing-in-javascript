@@ -6,12 +6,12 @@ const init = () => {
   newPostButton.addEventListener("click", addPost);
 };
 
-const addPost = () => {
+const addPost = async () => {
   // get user input fields
   const { userIdInput, titleInput, articleInput } = getUserInputs();
 
   // check and generate
-  const resultText = checkAndGenerate(
+  const resultText = await checkAndGenerate(
     userIdInput.value,
     titleInput.value,
     articleInput.value

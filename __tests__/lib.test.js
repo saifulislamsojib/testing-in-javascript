@@ -1,3 +1,5 @@
+// jest.mock("../js/postToServer.js");
+
 const {
   generateResult,
   checkValidation,
@@ -19,8 +21,7 @@ test("check validation", () => {
   expect(checkValidation(1, "My First Blog", "blg....")).toBeTruthy();
 });
 
-test("check And Generate", () => {
-  expect(checkAndGenerate(1, "My First Blog", "blg....")).toBe(
-    "User ID: 1 created an article titled My First Blog"
-  );
+test("check And Generate", async () => {
+  const result = await checkAndGenerate(1, "My First Blog", "blg....");
+  expect(result).toBe("User ID: 1 created an article titled My First Blog");
 });
